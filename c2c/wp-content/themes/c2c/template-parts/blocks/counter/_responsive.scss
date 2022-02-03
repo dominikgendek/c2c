@@ -1,0 +1,17 @@
+@media(min-width: 767px){
+    .counter .container .row div p:first-child {
+        margin-bottom: 20px;
+    }
+
+    .counter .container {
+        padding: 80px 50px;
+    }
+    .counter .container .row {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    }
+    .counter .container .row div {
+        width: auto;
+    }
+}

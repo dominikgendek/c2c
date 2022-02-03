@@ -1,0 +1,28 @@
+@media(min-width: 767px){
+    .faq .container .row .col2 .faq-box .question {
+        font-size: 24px;
+    }
+
+    .faq .container .row {
+        flex-wrap: nowrap;
+    }
+
+    .faq .container .row .col2 {
+        width: 50%;
+        order: 1;
+    }
+
+    .faq .container .row .col1{
+        width: 50%;
+    }
+    .faq .container .row .col1 img{
+        margin: auto;
+    }
+}
+
+@media(min-width: 1000px){
+    .faq .container .row .col1 img{
+        width: auto;
+        margin: auto;
+    }
+}

@@ -1,0 +1,65 @@
+.counter {
+  padding: 0px 15px;
+}
+
+.counter .container {
+  max-width: 1170px;
+  background-color: #FF4363;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.counter .container .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.counter .container .row div {
+  width: 50%;
+  text-align: center;
+}
+
+.counter .container .row div p:first-child {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: white;
+  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+@media (min-width: 767px) {
+  .counter .container .row div p:first-child {
+    font-size: 40px;
+  }
+}
+
+.counter .container .row div p:last-child {
+  font-size: 18px;
+  font-family: 'Poppins';
+  color: white;
+  margin-top: 0px;
+}
+
+@media (min-width: 767px) {
+  .counter .container .row div p:first-child {
+    margin-bottom: 20px;
+  }
+  .counter .container {
+    padding: 80px 50px;
+  }
+  .counter .container .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .counter .container .row div {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=counter.css.map */

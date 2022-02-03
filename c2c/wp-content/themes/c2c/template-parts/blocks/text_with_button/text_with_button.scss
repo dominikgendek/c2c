@@ -1,0 +1,14 @@
+@import "../../../scss/mixins";
+
+.text_with_button {
+    h2{
+        @include title(black);
+    }
+    p{
+        @include text(#666666);
+        margin-bottom: 30px
+    }
+    .wp-block-button__link {
+        @include button();
+    }
+}

@@ -1,0 +1,122 @@
+.faq .container .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.faq .container .row .col1 {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faq .container .row .col1 img {
+  width: 70%;
+  margin: auto;
+  margin-left: 0px;
+}
+
+.faq .container .row .col2 {
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.faq .container .row .col2 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: black;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 767px) {
+  .faq .container .row .col2 h2 {
+    font-size: 40px;
+  }
+}
+
+.faq .container .row .col2 p {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Poppins';
+  color: #666666;
+}
+
+@media (min-width: 767px) {
+  .faq .container .row .col2 p {
+    font-size: 18px;
+  }
+}
+
+.faq .container .row .col2 .faq-box {
+  margin: 30px 0px;
+}
+
+.faq .container .row .col2 .faq-box .question {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: #FF7588;
+  margin: 0px;
+}
+
+.faq .container .row .col2 .faq-box .question:hover {
+  cursor: pointer;
+}
+
+.faq .container .row .col2 .faq-box .answer {
+  margin: 0px;
+  display: none;
+}
+
+.faq .container .row .col2 .faq-box:first-child .answer {
+  display: block;
+}
+
+@media (min-width: 767px) {
+  .faq .container .row .col2 .faq-box .question {
+    font-size: 24px;
+  }
+  .faq .container .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .faq .container .row .col2 {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .faq .container .row .col1 {
+    width: 50%;
+  }
+  .faq .container .row .col1 img {
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .faq .container .row .col1 img {
+    width: auto;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=faq.css.map */

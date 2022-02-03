@@ -1,0 +1,11 @@
+@media(min-width: 1100px){
+    footer .container .row{
+        flex-wrap: nowrap;
+    }
+    footer .container .row p{
+        width: auto;
+    }
+    footer .container .row div{
+        width: auto;
+    }
+}

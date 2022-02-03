@@ -1,0 +1,117 @@
+@import "./mixins";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.row {
+    @include row;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 70px auto;
+    padding: 0px 15px;
+}
+
+footer {
+    background-color: black;
+    padding: 25px;
+    margin-top: 110px;
+
+    .container {
+        margin: auto;
+        .row {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            div {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            a {
+                font-size: 18px;
+                font-family: 'Poppins';
+                color: white;
+                text-decoration: none;
+                margin-right: 5px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                font-family: 'Poppins';
+                color: white;
+                width: 100%;
+            }
+        }
+    }
+}
+
+#wrapper-navbar {
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+
+    .container {
+        position: relative;
+        margin: auto;
+        .row {
+            justify-content: space-between;
+
+            .menu-menu-1-container {
+                display: none;
+                text-align: center;
+                background: white;
+                position: absolute;
+                top: 80px;
+                left: 0px;
+                width: 100%;
+                padding: 30px;
+
+                ul {
+                    padding: 0px;
+                    list-style: none;
+
+                    li {
+                        padding: 5px 0px;
+
+                        a {
+                            color: #ff4363;
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-family: 'Poppins';
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+            }
+
+            #navbar-toggler {
+                background-color: transparent;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                span {
+                    display: block;
+                    width: 36px;
+                    height: 3px;
+                    background-color: white;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

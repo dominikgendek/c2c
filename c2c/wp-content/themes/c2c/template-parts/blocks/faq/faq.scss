@@ -1,0 +1,60 @@
+@import "../../../scss/mixins";
+
+.faq {
+    .container {
+        .row {
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            .col1{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                img{
+                    width: 70%;
+                    margin: auto;
+                    margin-left: 0px;
+                }
+            }
+            .col2{
+                width: 100%;
+                order: 2;
+                h2{
+                    @include title(black);
+                }
+                p{
+                    @include text(#666666);
+                }
+
+                .faq-box{
+                    margin: 30px 0px;
+                    .question{
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-family: 'Poppins';
+                        color: #FF7588;
+                        margin: 0px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .answer{
+                        margin: 0px;
+                        display: none;
+                    }
+                }
+
+                .faq-box:first-child{
+                    .answer{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./responsive";

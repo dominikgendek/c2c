@@ -1,0 +1,130 @@
+.block_list .container .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block_list .container .row .col1 {
+  width: 80%;
+}
+
+.block_list .container .row .col1 img {
+  width: 100%;
+}
+
+.block_list .container .row .col2 {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.block_list .container .row .col2 h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: black;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 767px) {
+  .block_list .container .row .col2 h2 {
+    font-size: 40px;
+  }
+}
+
+.block_list .container .row .col2 p {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Poppins';
+  color: #666666;
+}
+
+@media (min-width: 767px) {
+  .block_list .container .row .col2 p {
+    font-size: 18px;
+  }
+}
+
+.block_list .container .row .col2 ul {
+  padding: 20px;
+}
+
+.block_list .container .row .col2 ul li {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Poppins';
+  color: #666666;
+  line-height: 30px;
+  list-style: none;
+  color: #666666;
+}
+
+@media (min-width: 767px) {
+  .block_list .container .row .col2 ul li {
+    font-size: 18px;
+  }
+}
+
+.block_list .container .row .col2 ul li:before {
+  content: "";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background-color: #FF7588;
+  /* Change the color */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-11px);
+          transform: translateX(-11px);
+  margin-left: -11px;
+}
+
+.block_list .container .row .col2 .wp-block-button__link {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  background-color: #ff4363;
+  color: white;
+  padding: 20px;
+  border-radius: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.block_list .container .row .col2 .wp-block-button__link:hover {
+  background-color: black !important;
+}
+
+@media (min-width: 1000px) {
+  .block_list .container .row .col2 .wp-block-button__link {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 767px) {
+  .block_list .container .row .col1 {
+    width: 50%;
+    padding-right: 30px;
+  }
+  .block_list .container .row .col2 ul li {
+    line-height: 48px;
+  }
+  .block_list .container .row .col2 {
+    width: 50%;
+    margin: 0px;
+  }
+  .block_list .container .row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1600px) {
+  .block_list .container .row .col1 img {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
+}
+/*# sourceMappingURL=block_list.css.map */

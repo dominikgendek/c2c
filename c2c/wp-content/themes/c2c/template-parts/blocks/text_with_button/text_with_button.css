@@ -1,0 +1,51 @@
+.text_with_button h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: black;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 767px) {
+  .text_with_button h2 {
+    font-size: 40px;
+  }
+}
+
+.text_with_button p {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Poppins';
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 767px) {
+  .text_with_button p {
+    font-size: 18px;
+  }
+}
+
+.text_with_button .wp-block-button__link {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  background-color: #ff4363;
+  color: white;
+  padding: 20px;
+  border-radius: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.text_with_button .wp-block-button__link:hover {
+  background-color: black !important;
+}
+
+@media (min-width: 1000px) {
+  .text_with_button .wp-block-button__link {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
+}
+/*# sourceMappingURL=text_with_button.css.map */

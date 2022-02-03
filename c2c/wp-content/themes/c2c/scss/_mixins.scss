@@ -1,0 +1,49 @@
+@mixin title($color){
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: $color;
+    margin-bottom: 30px;
+    @media (min-width:767px){
+        font-size: 40px;
+    }
+}
+
+@mixin button(){
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    background-color: #ff4363;
+    color: white;
+    padding: 20px; 
+    border-radius: 35px;
+    transition: 0.5s;
+    &:hover{
+        background-color: black !important;
+    }
+    @media(min-width:1000px){
+        font-size: 24px;
+        padding: 20px 40px; 
+    }
+}
+
+@mixin cointainer{
+    max-width: 1170px;
+    margin: 100px auto;
+}
+
+@mixin row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text($color){
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Poppins';
+    color: $color;
+    @media (min-width:767px){
+        font-size: 18px;
+    }
+}

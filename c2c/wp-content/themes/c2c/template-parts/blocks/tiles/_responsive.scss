@@ -1,0 +1,26 @@
+@media(min-width: 500px){
+    .tiles .container .row .tile {
+        width: 49%;
+    }
+}
+
+@media(min-width: 767px){
+    .tiles .container .row .tile p {
+        line-height: 48px;
+    }
+
+    .tiles .container .row .tile h3 {
+        font-size: 24px;
+    }
+
+    .tiles .container .row .tile {
+        padding: 30px;
+    }
+}
+
+@media(min-width: 1000px){
+    .tiles .container .row .tile {
+        max-width: 370px; 
+        width: 33%;
+    }
+}

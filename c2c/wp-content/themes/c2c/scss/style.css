@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 70px auto;
+  padding: 0px 15px;
+}
+
+footer {
+  background-color: black;
+  padding: 25px;
+  margin-top: 110px;
+}
+
+footer .container {
+  margin: auto;
+}
+
+footer .container .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .row div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+footer .container .row a {
+  font-size: 18px;
+  font-family: 'Poppins';
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+footer .container .row p {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: white;
+  width: 100%;
+}
+
+#wrapper-navbar {
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px;
+}
+
+#wrapper-navbar .container {
+  position: relative;
+  margin: auto;
+}
+
+#wrapper-navbar .container .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wrapper-navbar .container .row .menu-menu-1-container {
+  display: none;
+  text-align: center;
+  background: white;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  padding: 30px;
+}
+
+#wrapper-navbar .container .row .menu-menu-1-container ul {
+  padding: 0px;
+  list-style: none;
+}
+
+#wrapper-navbar .container .row .menu-menu-1-container ul li {
+  padding: 5px 0px;
+}
+
+#wrapper-navbar .container .row .menu-menu-1-container ul li a {
+  color: #ff4363;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  text-decoration: none;
+}
+
+#wrapper-navbar .container .row #navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+#wrapper-navbar .container .row #navbar-toggler:hover {
+  cursor: pointer;
+}
+
+#wrapper-navbar .container .row #navbar-toggler span {
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=style.css.map */

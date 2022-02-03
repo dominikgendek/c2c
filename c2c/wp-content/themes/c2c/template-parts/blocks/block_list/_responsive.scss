@@ -1,0 +1,25 @@
+@media(min-width: 767px){
+    .block_list .container .row .col1 {
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    .block_list .container .row .col2 ul li{
+        line-height: 48px;
+    }
+
+    .block_list .container .row .col2 {
+        width: 50%;
+        margin: 0px;
+    }
+
+    .block_list .container .row {
+        flex-wrap: nowrap;
+    }
+}
+
+@media(min-width: 1600px){
+    .block_list .container .row .col1 img {
+        transform: translateX(-30%);
+    }
+}
